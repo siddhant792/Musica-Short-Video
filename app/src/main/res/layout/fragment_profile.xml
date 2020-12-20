@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".All.Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:id="@+id/headerprofile"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/name_header"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/average_sans"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Name"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:id="@+id/morebutton"
+            android:layout_alignParentRight="true"
+            android:tint="#000"
+            android:layout_gravity="center"
+            android:src="@drawable/more_options"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/name_header"
+            android:layout_height="0.6dp"
+            android:background="#000"/>
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerprofile"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/test"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/default_picc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/username"
+        android:textColor="#000"
+        android:fontFamily="@font/average_sans"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/username"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/following_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/average_sans"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#756B6B"
+            android:fontFamily="@font/average_sans"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="Following"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/temp_ref"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/username"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:fontFamily="@font/average_sans"
+            android:textStyle="bold"
+            android:id="@+id/followers_number"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#756B6B"
+            android:fontFamily="@font/average_sans"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="Followers"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/username"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:fontFamily="@font/average_sans"
+            android:textStyle="bold"
+            android:id="@+id/likes_number"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#756B6B"
+            android:fontFamily="@font/average_sans"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="Likes"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp_ref"
+        android:id="@+id/bio_text"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:fontFamily="@font/average_sans"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:text="My Name is Siddhant Gupta and this application is in development stage"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/temp2"
+        android:layout_below="@+id/bio_text"
+        android:layout_height="0.5dp"
+        android:background="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/temp5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/temp2">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/profile_uploads"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/temp3"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/grid_vector"
+                android:tint="#000"/>
+
+            <View
+                android:layout_width="50dp"
+                android:background="#000"
+                android:id="@+id/bottom_line_uploads"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/temp3"
+                android:layout_height="0.8dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+            android:id="@+id/profile_liked"
+            android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/temp4"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/saved_vector"
+            android:tint="#000"/>
+
+            <View
+                android:layout_width="50dp"
+                android:background="#000"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:id="@+id/bottom_line_liked"
+                android:layout_below="@id/temp4"
+                android:layout_height="0.8dp"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+        </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_profile"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@+id/test"
+        android:layout_marginRight="3dp"
+        android:layout_height="wrap_content"
+        android:background="#fff" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progress_bar_screen"
+        android:visibility="gone"
+        android:background="#fff">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/progress_bar"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

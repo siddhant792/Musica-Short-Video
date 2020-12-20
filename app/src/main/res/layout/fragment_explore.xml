@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".All.Explore">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/headeractivity"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:id="@+id/temp6"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/average_sans"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_below="@+id/temp6"
+            android:background="#000"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headeractivity"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:id="@+id/tempp1"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:padding="2dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Wallpaper Arena"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/average_sans"
+                        android:id="@+id/name1"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="The free App provides thousands of HD Wallpapers and HD Backgrounds to make your screen unique and elegant"
+                        android:gravity="center"
+                        android:layout_below="@+id/name1"
+                        android:fontFamily="@font/average_sans"
+                        android:textColor="#4A4747"
+                        android:id="@+id/wa_text"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/wallpaper"
+                        android:clickable="true"
+                        android:layout_below="@+id/wa_text"
+                        android:padding="5dp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:id="@+id/install_wa"
+                        android:text="Install Now"
+                        android:layout_below="@id/wallpaper"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="10dp"
+                        android:background="@drawable/bg_search2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="30dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                android:layout_below="@+id/tempp1"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:padding="2dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Care Yourself"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/average_sans"
+                        android:id="@+id/name2"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Care Yourself is a health and fitness powerhouse application which will help you to get a extra year in your life."
+                        android:gravity="center"
+                        android:layout_below="@+id/name2"
+                        android:fontFamily="@font/average_sans"
+                        android:textColor="#4A4747"
+                        android:id="@+id/cy_text"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/careyourself"
+                        android:clickable="true"
+                        android:layout_below="@+id/cy_text"
+                        android:padding="5dp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:id="@+id/install_cy"
+                        android:text="Install Now"
+                        android:layout_below="@id/careyourself"
+                        android:textColor="#fff"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_search2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="30dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

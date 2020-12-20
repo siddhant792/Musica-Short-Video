@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mark.tiktok20.All.Upload_progress">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Processing.."
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/average_sans"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"/>
+
+
+    <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+        android:id="@+id/circular_progress"
+        android:layout_width="200dp"
+        app:textColor="#0710BA"
+        app:textSize="30sp"
+        app:progressColor="#EA0734"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:gradientType="linear"
+        app:progressStrokeWidth="25dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        app:gradientEndColor="#0844FA"
+        app:drawDot="false"
+        android:layout_marginTop="8dp" />
+
+
+</RelativeLayout>

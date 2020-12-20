@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainlayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#000"
+        android:layout_height="match_parent">
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:id="@+id/feed_video"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent" />
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/playerview"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            app:controller_layout_id="@layout/item_player_controler"
+            app:show_timeout="1000"
+            app:resize_mode="fixed_width"
+            />
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/thumb"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/backtrans"
+        android:alpha="0.8"
+        android:layout_height="wrap_content"/>
+
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/music_cd"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="20dp"
+    android:src="@drawable/musiccd" />
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/share_post"
+    android:layout_above="@+id/music_cd"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="30dp"
+    android:src="@drawable/share" />
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/like_post"
+    android:layout_above="@+id/share_post"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="30dp"
+    android:src="@drawable/heart_nolike" />
+
+<RelativeLayout
+    android:layout_width="40dp"
+    android:layout_height="55dp"
+    android:id="@+id/follow_whole"
+    android:layout_alignParentRight="true"
+    android:layout_above="@+id/like_post"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="30dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:background="@drawable/default_picc"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_postclick"
+        />
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle_like"
+        android:id="@+id/follow_req"
+        android:src="@drawable/follow_req" />
+
+</RelativeLayout>
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:id="@+id/username_post"
+    android:fontFamily="@font/average_sans"
+    android:textColor="#fff"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="15dp"
+    android:layout_alignParentLeft="true"
+    android:text="Username"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/download_post"
+        android:layout_above="@+id/username_post"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/download_post" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

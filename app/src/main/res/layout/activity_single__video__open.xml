@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".All.Single_Video_Open"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#000"
+        android:layout_height="match_parent">
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:id="@+id/feed_video"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:src="@drawable/back2"/>
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/playerview"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            app:controller_layout_id="@layout/item_player_controler"
+            app:show_timeout="1000"
+            app:resize_mode="fixed_width"
+            />
+        <ProgressBar
+            android:id="@+id/progabar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_alignParentBottom="true"
+            android:indeterminateOnly="true"
+            android:visibility="visible"
+            android:indeterminateTint="@color/white"
+            android:secondaryProgress="@android:integer/config_shortAnimTime"/>
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:background="@drawable/backtrans"
+    android:alpha="0.6"
+    android:layout_height="wrap_content"/>
+
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/music_cd"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="20dp"
+    android:src="@drawable/musiccd" />
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/share_post"
+    android:layout_above="@+id/music_cd"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="30dp"
+    android:src="@drawable/share" />
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/like_post"
+    android:layout_above="@+id/share_post"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="30dp"
+    android:src="@drawable/heart_nolike" />
+
+
+
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/download_post"
+    android:tint="#fff"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="30dp"
+    android:layout_marginBottom="20dp"
+    android:layout_alignParentBottom="true"
+    android:src="@drawable/download_post" />
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/back_button"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="10dp"
+    android:tint="#fff"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/back_button" />
+
+
+</RelativeLayout>

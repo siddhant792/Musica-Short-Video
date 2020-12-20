@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "335558820283",
+    "firebase_url": "https://project-tok.firebaseio.com",
+    "project_id": "project-tok",
+    "storage_bucket": "project-tok.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335558820283:android:e4cc95d4b058c66d8e449e",
+        "android_client_info": {
+          "package_name": "com.mark.musica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335558820283-2fekosflldrrcjvivk3r6tujlidgp5hv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mark.musica",
+            "certificate_hash": "618d4b09e6da0ed3beed95b500b67770137dc3e2"
+          }
+        },
+        {
+          "client_id": "335558820283-rur8757cbu5ubm9cf0tvnuqdm7uhodvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHX8NmZhGp-a2rycislCzS25cxiFS7qnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335558820283-rur8757cbu5ubm9cf0tvnuqdm7uhodvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335558820283:android:f6cebaf4168d7b6d8e449e",
+        "android_client_info": {
+          "package_name": "com.mark.tiktok20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335558820283-q4g4pa5ohfjmqpo70hmr0nd1q920str3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mark.tiktok20",
+            "certificate_hash": "c67a97b611bac31db3d7ae412d0455d3dc690ec6"
+          }
+        },
+        {
+          "client_id": "335558820283-gc1eggrufs8pmmhhdija1jin042orkai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mark.tiktok20",
+            "certificate_hash": "618d4b09e6da0ed3beed95b500b67770137dc3e2"
+          }
+        },
+        {
+          "client_id": "335558820283-rur8757cbu5ubm9cf0tvnuqdm7uhodvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHX8NmZhGp-a2rycislCzS25cxiFS7qnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335558820283-rur8757cbu5ubm9cf0tvnuqdm7uhodvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

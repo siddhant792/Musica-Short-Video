@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".All.Recorded_video_supressor">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/playerview"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        app:show_timeout="1000"
+        app:resize_mode="fixed_width"
+        />
+
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Continue"
+        android:fontFamily="@font/average_sans"
+        android:textColor="#fff"
+        android:id="@+id/continue_to_upload"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:background="@drawable/round_background"/>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/close_sticker_button"
+        android:layout_width="35dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/left"
+        android:layout_height="35dp"/>
+    <Button
+        android:id="@+id/clear_sticker_button"
+        android:layout_toEndOf="@id/close_sticker_button"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sticker_recyclerview"
+        android:layout_above="@id/sticker_category_recyclerview"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sticker_category_recyclerview"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/clear_sticker_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

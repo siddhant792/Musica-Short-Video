@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/bulgefun_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/close_bulge_button"
+                android:layout_width="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left"
+                android:layout_height="40dp"
+                />
+
+            <Button
+                android:id="@+id/clear_bulge_button"
+                android:layout_width="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/close"
+                android:layout_height="40dp"
+                />
+            <Button
+                android:id="@+id/bulge_fun1_button"
+                android:layout_width="40dp"
+                android:background="@drawable/b1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="40dp"
+                />
+
+            <Button
+                android:id="@+id/bulge_fun2_button"
+                android:layout_width="40dp"
+                android:background="@drawable/b2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/bulge_fun3_button"
+                android:layout_width="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/b3"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_width="40dp"
+                android:id="@+id/bulge_fun4_button"
+                android:background="@drawable/b4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="40dp" />
+
+
+            <Button
+                android:id="@+id/bulge_fun5_button"
+                android:layout_width="40dp"
+                android:background="@drawable/b5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/bulge_fun6_button"
+                android:layout_width="40dp"
+                android:background="@drawable/b6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
